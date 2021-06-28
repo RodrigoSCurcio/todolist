@@ -22,6 +22,6 @@
 
 ### Erros que aparecem porem não tive tempo de estar mexendo ainda 
 
-* Warns no console
+* Erros no console
 
 * Obs: A aplicação estar rodando corretamente mesmo com esses erros
