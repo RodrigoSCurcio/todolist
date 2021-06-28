@@ -1,0 +1,167 @@
+@keyframes modalAnimation {
+  from {
+    bottom: -300px;
+  }
+  to {
+    bottom: 40px;
+  }
+}
+  
+.overlay {
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  top: 0px;
+  right: 0;
+  z-index: 2;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.backgroundFocus {
+  height: 100%;
+  width: 100vw;
+  background: #F7F7F7;
+  filter: blur(100px);
+  position: fixed;
+  top: 0;
+}
+  
+.modal {
+  position: fixed;
+  background-color: var(--bg-dark);
+  width: 645px;
+  height: 640px;
+  border-radius: 18px;
+  font-family: 'Open Sans';
+  z-index: 2;
+  bottom: 40px;
+  
+  box-shadow: 2px -2px 6px -2px rgba(0,0,0,0.42);
+  -webkit-box-shadow: 2px -2px 6px -2px rgba(0,0,0,0.42);
+  -moz-box-shadow: 2px -2px 6px -2px rgba(0,0,0,0.42);
+  
+  animation-name: modalAnimation;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  overflow-y: scroll;
+}
+
+.loadingModal {
+  margin: -100px 0 0 0;
+  max-width: 95px;
+}
+  
+.modal::-webkit-scrollbar {
+  width: 0px;
+}
+  
+.header p:nth-child(1) {
+  margin: 20px 0 0 30px;
+  font-size: 35px;
+  color: var(--purple-dark);
+}
+
+.closeIcon {
+  position: absolute;
+  top: -15px;
+  right: 6%;
+
+  cursor: pointer;
+
+  font-size: 35px;
+  font-family: sans-serif;
+  color: var(--purple-dark);
+}
+
+.main {
+  margin: 5px 0 25px 0;
+  height: 355px;
+  overflow-y: scroll;
+  
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: var(--purple);
+}
+
+.main::-webkit-scrollbar {
+  width: 10px;
+  bottom: 0;
+}
+  
+.main::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+  
+.main::-webkit-scrollbar-thumb {
+  background-color: var(--purple-dark);
+  border-radius: 5px;
+}
+
+.todoList {
+  display: flex;
+}
+
+.todoList p {
+  margin: 5px 0 0 20px;
+  color: var(--purple-dark);
+  width: 565px;
+
+  text-transform: capitalize;
+
+  border-bottom: 1px solid;
+}
+
+.todoList input {
+  margin: 10px 0 0 5px;
+}
+  
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid;
+  border-color: var(--purple);
+  border-radius: 10px;
+
+  margin: 10px 0 10px 0;
+}
+
+form h3 {
+  color: var(--purple);
+  margin: 15px 0 0 0;
+}
+
+form input {
+  background-color: transparent;
+  border: 1px solid;
+  border-color: var(--purple-dark);
+  border-radius: 3px;
+
+  color: var(--purple-dark);
+  margin: 10px 0 0 0;
+}
+
+form input::placeholder {
+  color: var(--purple-dark);
+}
+
+form button {
+  width: 65px;
+  height: 25px;
+  margin: 10px 0 10px 0;
+
+  border-radius: 5px;
+  border: 1px solid;
+
+  color: var(--purple);
+  background-color: transparent;
+
+  cursor: pointer;
+}
