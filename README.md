@@ -1,6 +1,6 @@
 ![todolist](https://user-images.githubusercontent.com/59969422/123716712-aa892f80-d851-11eb-8350-f3a2175791cd.PNG)
 
-> Status: Desenvolvimento ⚠️
+> Status: Desenvolvimento ✔️
 
 ### Aplicação em ReactJS utilizando a fake API {JSON} Placeholder
 
